@@ -68,20 +68,7 @@ menu_item.forEach((item) => {
 	});
 });
 
-const xhr = new XMLHttpRequest();
-xhr.withCredentials = true;
 
-xhr.addEventListener("readystatechange", function () {
-	if (this.readyState === this.DONE) {
-		console.log(this.responseText);
-	}
-});
-
-xhr.open("GET", "https://weatherinfo.p.rapidapi.com/api/weather/?latitude=45.06&longitude=-94.35");
-xhr.setRequestHeader("x-rapidapi-key", "486b8c4136mshecc5bb5954df9c2p1cba6ejsn01f55e24bd30");
-xhr.setRequestHeader("x-rapidapi-host", "weatherinfo.p.rapidapi.com");
-
-xhr.send(data);
 
 
 
